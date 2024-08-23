@@ -40,7 +40,7 @@ const HomeNavBar = () => {
     <div className={`fixed flex justify-between items-center w-full bg-white mt-9 py-4 md:px-20 px-5 z-30 ${scrollActive ? "shadow-sm" : ""}`}>
       <Link href='/home' className="flex gap-x-1 items-center">
         <Image src={Logo} alt='logoImage' />
-        <h1 className='font-bold underline'>HibirLink</h1>
+        <h1 className='font-bold underline'>recipeRumble</h1>
       </Link>
       <div className="hidden md:flex justify-center items-center gap-x-4">
         <Dropdown />
@@ -49,21 +49,21 @@ const HomeNavBar = () => {
       </div>
       <div className="flex gap-x-6 items-center">
         <Link href=''>
-          <IoIosHeartEmpty size={20} className='hover:text-primary' />
+          <IoIosHeartEmpty size={20} className='hover:text-orange-500' />
         </Link>
         <Link href=''>
-          <IoCartOutline size={20} className='hover:text-primary' />
+          <IoCartOutline size={20} className='hover:text-orange-500' />
         </Link>
         {isLoggedIn ? (
           <div className="flex items-center gap-x-4">
             <Link href='/pages/profile'>
               <Image src={avatarimage} alt="Profile" className="rounded-full w-12 h-12 cursor-pointer" width={40} height={40} />
             </Link>
-            <button onClick={handleLogout} className="hidden md:inline-block px-4 py-2 bg-primary text-white rounded-2xl text-xm hover:bg-blue-500">Logout</button>
+            <button onClick={handleLogout} className="hidden md:inline-block px-4 py-2 bg-orange-500 text-white rounded-2xl text-xm hover:bg-orange-600">Logout</button>
           </div>
         ) : (
           <Link href='/auth/login'>
-            <button className='px-4 py-2 bg-primary text-white rounded-2xl text-xm hover:bg-blue-500 hidden md:block'>GetStarted</button>
+            <button className='px-4 py-2 bg-orange-500 text-white rounded-2xl text-xm hover:bg-orange-600 hidden md:block'>Get Started</button>
           </Link>
         )}
         <button onClick={toggleMenu} className="md:hidden">
@@ -80,10 +80,10 @@ const HomeNavBar = () => {
             <Link href='#faq' className='mb-4' onClick={toggleMenu}>FAQ</Link>
             <Dropdown />
             {isLoggedIn ? (
-              <button onClick={handleLogout} className='px-4 py-2 mt-4 bg-primary text-white rounded-lg text-xm hover:bg-blue-500 mb-4'>Logout</button>
+              <button onClick={handleLogout} className='px-4 py-2 mt-4 bg-orange-500 text-white rounded-lg text-xm hover:bg-orange-600 mb-4'>Logout</button>
             ) : (
               <Link href='/auth/login'>
-                <button className='px-4 py-2 mt-4 bg-primary text-white rounded-lg text-xm hover:bg-blue-500 mb-4'>GetStarted</button>
+                <button className='px-4 py-2 mt-4 bg-orange-500 text-white rounded-lg text-xm hover:bg-orange-600 mb-4'>Get Started</button>
               </Link>
             )}
           </div>

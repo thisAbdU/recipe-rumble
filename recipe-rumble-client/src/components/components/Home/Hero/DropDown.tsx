@@ -13,9 +13,9 @@ const Dropdown = () => {
       <div className="inline-block">
         <button
           onClick={toggleDropdown}
-          className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500"
+          className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-orange-500 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-orange-500"
         >
-          All Categories
+          Recipe Categories
         </button>
         {isOpen && (
           <div className="absolute bg-white text-black mt-1 origin-top-right left-0 w-[160px] rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-50">
@@ -24,19 +24,19 @@ const Dropdown = () => {
                 href="/marketplace"
                 className="block px-4 py-2 text-sm hover:bg-gray-100"
               >
-                Market place
+                Food Marketplace
               </Link>
               <Link
                 href="/services"
                 className="block px-4 py-2 text-sm hover:bg-gray-100"
               >
-                Service Provided
+                Recipe Services
               </Link>
               <Link
-                href="/auction"
+                href="/challenges"
                 className="block px-4 py-2 text-sm hover:bg-gray-100"
               >
-                Auction system
+                Recipe Challenges
               </Link>
             </div>
           </div>

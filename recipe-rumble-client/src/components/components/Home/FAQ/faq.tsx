@@ -12,9 +12,9 @@ import Image from 'next/image';
 const FAQ = () => {
     const [expandedItem, setExpandedItem] = useState(null);
 
-    const handleAccordionClick = (value:any) => {
+    const handleAccordionClick = (value: any) => {
         if (expandedItem === value) {
-            setExpandedItem(null); 
+            setExpandedItem(null);
         } else {
             setExpandedItem(value);
         }
@@ -35,57 +35,57 @@ const FAQ = () => {
                 <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
                         <AccordionTrigger
-                            className={`py-2 px-4 rounded cursor-pointer mb-2 ${expandedItem === 'item-1' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-primary'}`}
+                            className={`py-2 px-4 rounded cursor-pointer mb-2 ${expandedItem === 'item-1' ? 'bg-orange-500 text-white' : 'bg-gray-100 text-primary'}`}
                             onClick={() => handleAccordionClick('item-1')}
                         >
-                            What is Hibirlink?
+                            What is Recipe Rumble?
                         </AccordionTrigger>
                         <AccordionContent className="bg-gray-100 text-black py-2 px-4 rounded mb-2">
-                            Hibirlink is a startup aimed at revolutionizing the digital economy in Ethiopia and beyond by creating an online ecosystem platform. This platform integrates an online product marketplace, trusted delivery services, streamlined service provider connections, and a flexible online auction system.
+                            Recipe Rumble is a food website where people can purchase a variety of dishes. It also offers exciting cooking challenges for users to participate in and showcase their culinary skills.
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-2">
                         <AccordionTrigger
-                            className={`py-2 px-4 rounded cursor-pointer mb-2 ${expandedItem === 'item-2' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-primary'}`}
+                            className={`py-2 px-4 rounded cursor-pointer mb-2 ${expandedItem === 'item-2' ? 'bg-orange-500 text-white' : 'bg-gray-100 text-primary'}`}
                             onClick={() => handleAccordionClick('item-2')}
                         >
-                            How does Hibirlink support small businesses and entrepreneurs?
+                            How can I participate in cooking challenges on Recipe Rumble?
                         </AccordionTrigger>
                         <AccordionContent className="bg-gray-100 text-black py-2 px-4 rounded mb-2">
-                            Hibirlink offers a platform for small businesses to reach broader markets and manage their inventories efficiently. By integrating a product marketplace, delivery services, and service provider connections, it aims to provide comprehensive support to small businesses and entrepreneurs.
+                            To participate in cooking challenges on Recipe Rumble, you need to sign up on our platform. Once registered, you can join any ongoing challenges and submit your entries for a chance to win exciting prizes.
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-3">
                         <AccordionTrigger
-                            className={`py-2 px-4 rounded cursor-pointer mb-2 ${expandedItem === 'item-3' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-primary'}`}
+                            className={`py-2 px-4 rounded cursor-pointer mb-2 ${expandedItem === 'item-3' ? 'bg-orange-500 text-white' : 'bg-gray-100 text-primary'}`}
                             onClick={() => handleAccordionClick('item-3')}
                         >
-                            What services does Hibirlink provide?
+                            What types of food can I purchase on Recipe Rumble?
                         </AccordionTrigger>
                         <AccordionContent className="bg-gray-100 text-black py-2 px-4 rounded mb-2">
-                            Hibirlink provides a range of services including an online product marketplace, trusted delivery services, streamlined connections with service providers, and a flexible online auction system for trading used products.
+                            Recipe Rumble offers a wide variety of dishes ranging from appetizers, main courses, desserts, and beverages. You can explore different cuisines and order your favorite meals directly from our website.
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-4">
                         <AccordionTrigger
-                            className={`py-2 px-4 rounded cursor-pointer mb-2 ${expandedItem === 'item-4' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-primary'}`}
+                            className={`py-2 px-4 rounded cursor-pointer mb-2 ${expandedItem === 'item-4' ? 'bg-orange-500 text-white' : 'bg-gray-100 text-primary'}`}
                             onClick={() => handleAccordionClick('item-4')}
                         >
-                            How does the auction system work?
+                            How do I place an order on Recipe Rumble?
                         </AccordionTrigger>
                         <AccordionContent className="bg-gray-100 text-black py-2 px-4 rounded mb-2">
-                            The online auction system on Hibirlink allows users to trade used products in a flexible and efficient manner. Users can list their products for auction, set starting bids, and buyers can place bids until the auction ends.
+                            Placing an order on Recipe Rumble is simple. Browse through our menu, select the dishes you want to order, add them to your cart, and proceed to checkout. You can choose your preferred payment method and delivery option during checkout.
                         </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item-5">
                         <AccordionTrigger
-                            className={`py-2 px-4 rounded cursor-pointer mb-2 ${expandedItem === 'item-5' ? 'bg-blue-500 text-white' : 'bg-gray-100 text-primary'}`}
+                            className={`py-2 px-4 rounded cursor-pointer mb-2 ${expandedItem === 'item-5' ? 'bg-orange-500 text-white' : 'bg-gray-100 text-primary'}`}
                             onClick={() => handleAccordionClick('item-5')}
                         >
-                            How can I become a service provider on Hibirlink?
+                            How can I contact Recipe Rumble for support?
                         </AccordionTrigger>
                         <AccordionContent className="bg-gray-100 text-black py-2 px-4 rounded mb-2">
-                            To become a service provider on Hibirlink, you need to sign up on our platform and complete the required registration process. Once registered, you can offer your services to a wide range of users looking for both real-time and virtual services.
+                            If you need support, you can contact Recipe Rumble through our 'Submit a Request' form available on the website. Our support team will get back to you as soon as possible to assist with your queries.
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
